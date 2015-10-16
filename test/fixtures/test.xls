@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x="urn:schemas-microsoft-com:office:excel">
+	<Styles>
+		<Style ss:ID="Default" ss:Name="Normal">
+			<Alignment ss:Vertical="Bottom"/>
+			<Borders/>
+			<Font ss:FontName="Verdana"/>
+			<Interior/>
+			<NumberFormat/>
+			<Protection/>
+		</Style>
+	</Styles>
+	<Worksheet ss:Name="Sheet1">
+		<Table>
+			<Row>
+				<Cell>
+					<Data ss:Type="String">Denver</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">22</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Date">2015-10-16</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell>
+					<Data ss:Type="String">London</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">13</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Date">2015-10-16</Data>
+				</Cell>
+			</Row>
+			<Row>
+				<Cell>
+					<Data ss:Type="String">Singapore</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">32</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Date">2015-10-16</Data>
+				</Cell>
+			</Row>
+		</Table>
+	</Worksheet>
+</Workbook>
