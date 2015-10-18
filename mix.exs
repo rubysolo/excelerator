@@ -27,9 +27,9 @@ defmodule Excelerator.Mixfile do
 
   defp package do
     [
-      files:      ~w[ lib README.md mix.exs LICENSE ],
-      contributors: ["Solomon White"],
-      licences:     ["The MIT License (MIT)"],
+      files:    ~w[ lib README.md mix.exs LICENSE ],
+      maintaners: ["Solomon White"],
+      licences:   ["The MIT License (MIT)"],
       links: %{
         "GitHub" => "https://github.com/rubysolo/excelerator",
         "Docs"   => "http://hexdocs.pm/excelerator",
