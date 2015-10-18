@@ -17,7 +17,7 @@ defmodule Excelerator.Phoenix do
 
   """
 
-  defmacro __using__(options) do
+  defmacro __using__(_options) do
     quote do
       def xls(conn, template, assigns, opts \\ []) do
         excel_data = view_module(conn).render(template, assigns)

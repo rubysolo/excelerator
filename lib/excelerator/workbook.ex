@@ -33,7 +33,7 @@ defmodule Excelerator.Workbook do
     end
   end
 
-  defmacro row(do: {_, _, statements} = content) do
+  defmacro row(do: {_, _, statements}) do
     quote do
       {:Row, unquote(statements)}
     end
