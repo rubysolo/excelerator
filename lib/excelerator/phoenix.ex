@@ -1,8 +1,26 @@
 defmodule Excelerator.Phoenix do
+  @moduledoc """
+  Provides the `xls` function for rendering Excel spreadsheets as file downloads
+  from Phoenix controllers.
+
+  ## Using
+
+  When used, `Excelerator.Phoenix` generates the `xls` function in your
+  controller so you can send file downloads like:
+
+      xls conn, "invoice.xls", items: line_items
+
+  The attachment filename defaults to the same name as the controller, but can
+  be overridden with the `:filename` option.
+
+      xls conn, "template.xls", data, filename: "SrsBizness.xls"
+
+  """
+
   defmacro __using__(options) do
     quote do
-      def xls(conn, template, data, opts \\ []) do
-        excel_data = view_module(conn).render(template, data)
+      def xls(conn, template, assigns, opts \\ []) do
+        excel_data = view_module(conn).render(template, assigns)
 
         default_filename = Phoenix.Naming.resource_name(__MODULE__, "Controller") <> ".xls"
         filename = Keyword.get(opts, :filename, default_filename)

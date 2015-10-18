@@ -6,9 +6,12 @@ defmodule Excelerator.Mixfile do
       app: :excelerator,
       version: "0.0.1",
       elixir: "~> 1.0",
+      name: "excelerator",
+      source_url: "https://github.com/rubysolo/excelerator",
       description: description,
       package: package,
-      deps: deps
+      deps: deps,
+      docs: [extras: ["README.md"]]
     ]
   end
 
@@ -18,7 +21,7 @@ defmodule Excelerator.Mixfile do
 
   def description do
     """
-    Generate Excel workbooks
+    Generate Excel workbooks in Elixir
     """
   end
 
@@ -36,7 +39,8 @@ defmodule Excelerator.Mixfile do
 
   defp deps do
     [
-      {:xml_builder, github: "joshnuss/xml_builder"}
+      {:xml_builder, github: "joshnuss/xml_builder"},
+      {:earmark, "~> 0.1", optional: true},
     ]
   end
 end

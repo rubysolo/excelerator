@@ -1,2 +1,3 @@
-%{"ex_doc": {:git, "https://github.com/elixir-lang/ex_doc.git", "63342194e8a572485b37b4a58668f9b43ab7ab26", []},
+%{"earmark": {:hex, :earmark, "0.1.17"},
+  "ex_doc": {:git, "https://github.com/elixir-lang/ex_doc.git", "63342194e8a572485b37b4a58668f9b43ab7ab26", []},
   "xml_builder": {:git, "https://github.com/joshnuss/xml_builder.git", "84c310903af9b80fc54829c88d2c4bc898a65233", []}}

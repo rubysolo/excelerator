@@ -1,4 +1,12 @@
 defmodule Excelerator.Workbook do
+  @moduledoc """
+  Provides functions to generate Excel spreadsheets.
+
+  ## Importing
+
+  You may want to import this module where you are generating spreadsheets.
+  """
+
   require Logger
   import XmlBuilder
 
@@ -25,9 +33,15 @@ defmodule Excelerator.Workbook do
     end
   end
 
-  defmacro row(do: {_, _, statements}) do
+  defmacro row(do: {_, _, statements} = content) do
     quote do
       {:Row, unquote(statements)}
+    end
+  end
+
+  defmacro row(do: content) do
+    quote do
+      {:Row, unquote(content || [])}
     end
   end
 
